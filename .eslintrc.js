@@ -18,7 +18,6 @@ module.exports = {
   parser: "babel-eslint",
   plugins: ["react"],
   rules: {
-    avoidEscape: true,
     "import/extensions": 0,
     "react/prop-types": 0,
     "linebreak-style": 0,
