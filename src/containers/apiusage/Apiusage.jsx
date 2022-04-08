@@ -1,5 +1,4 @@
 import React from "react";
-import Feature from "../../components/feature/Feature";
 import "./apiusage.css";
 import CodeSnippet from "../../assets/codesnippet.png";
 import { Button } from "../../components";
