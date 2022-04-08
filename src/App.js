@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { Footer, Features, WhatGPT3, Header, ApiUsage } from "./containers";
-import { CTA, Brand, Navbar } from "./components";
+import { Footer, Features, WhatGPT3, Header, ApiUsage } from './containers';
+import { Brand, Navbar } from './components';
 
-import "./App.css";
+import './App.css';
 
 const App = () => (
   <div className="App">

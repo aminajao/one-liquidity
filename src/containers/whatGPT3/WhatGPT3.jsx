@@ -1,8 +1,8 @@
-import React from "react";
-import Feature from "../../components/feature/Feature";
-import "./whatGPT3.css";
-import CurlRight from "../../assets/right.svg";
-import CurlLeft from "../../assets/curl-left.svg";
+import React from 'react';
+import Feature from '../../components/feature/Feature';
+import './whatGPT3.css';
+import CurlRight from '../../assets/right.svg';
+import CurlLeft from '../../assets/curl-left.svg';
 
 const WhatGPT3 = () => (
   <div className="container">

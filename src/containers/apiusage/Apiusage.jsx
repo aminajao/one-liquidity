@@ -1,7 +1,7 @@
-import React from "react";
-import "./apiusage.css";
-import CodeSnippet from "../../assets/codesnippet.png";
-import { Button } from "../../components";
+import React from 'react';
+import './apiusage.css';
+import CodeSnippet from '../../assets/codesnippet.png';
+import { Button } from '../../components';
 
 const ApiUsage = () => (
   <div className="container">
@@ -13,7 +13,7 @@ const ApiUsage = () => (
           </h1>
           <p>
             At jointure ladyship an insisted so humanity he. Friendly bachelor
-            entrance to on by. As put impossible own apartments{" "}
+            entrance to on by. As put impossible own apartments{' '}
           </p>
           <Button>Get started</Button>
         </div>

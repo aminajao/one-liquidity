@@ -1,8 +1,6 @@
-import React from "react";
-import people from "../../assets/people.png";
-// import Profile from '../../assets/unsplash.jpeg';
-import Hero from "../../assets/hero-icon.png";
-import "./header.css";
+import React from 'react';
+import Hero from '../../assets/hero-icon.png';
+import './header.css';
 
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">

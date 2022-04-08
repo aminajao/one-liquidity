@@ -1,6 +1,7 @@
-import React from "react";
-import "./button.css";
+import React from 'react';
+import './button.css';
 
-const Button = (props) => <button className="btn">{props.children}</button>;
+// eslint-disable-next-line react/button-has-type
+const Button = ({ children }) => <button className="btn">{children}</button>;
 
 export default Button;
