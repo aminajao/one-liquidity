@@ -1,6 +1,6 @@
 import React from 'react';
 import Feature from '../../components/feature/Feature';
-import './features.css';
+import { Container, Heading, FeaturesContainer } from './styled.jsx';
 import Illustration from '../../assets/illustration.svg';
 
 const featuresData = [
@@ -23,16 +23,17 @@ const featuresData = [
 ];
 
 const Features = () => (
-  <div className="gpt3__features section__padding" id="features">
-    <div className="gpt3__features-container">
+  <Container className="section__padding" id="features">
+    {/* <h1>Features</h1> */}
+    <FeaturesContainer>
       {featuresData.map((item, index) => (
         <Feature title={item.title} text={item.text} key={item.title + index} />
       ))}
-    </div>
-    <div className="gpt3__features-heading">
-      <img src={Illustration} alt="" />
-    </div>
-  </div>
+    </FeaturesContainer>
+    <Heading>
+      <img src={Illustration} />
+    </Heading>
+  </Container>
 );
 
 export default Features;

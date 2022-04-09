@@ -1,14 +1,19 @@
 import React from 'react';
-import './apiusage.css';
+import {
+  ImageContainer,
+  Heading,
+  Container,
+  LeftContainer,
+} from './styled.jsx';
 import CodeSnippet from '../../assets/codesnippet.png';
 import { Button } from '../../components';
 
 const ApiUsage = () => (
-  <div className="container">
+  <Container>
     <div className="gpt3__whatgpt3">
-      <div className="gpt3__whatgpt3-heading">
-        <div className="left__container">
-          <h1 className="gradient__text ">
+      <Heading>
+        <LeftContainer>
+          <h1 className="gradient__text">
             The possibilities are beyond your imagination
           </h1>
           <p>
@@ -16,13 +21,13 @@ const ApiUsage = () => (
             entrance to on by. As put impossible own apartments{' '}
           </p>
           <Button>Get started</Button>
-        </div>
-        <div className="image__container">
-          <img src={CodeSnippet} alt="" />
-        </div>
-      </div>
+        </LeftContainer>
+        <ImageContainer>
+          <img src={CodeSnippet} />
+        </ImageContainer>
+      </Heading>
     </div>
-  </div>
+  </Container>
 );
 
 export default ApiUsage;

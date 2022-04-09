@@ -1,16 +1,16 @@
 import React from 'react';
-import './feature.css';
+import { Container, Title, Text } from './styled';
 
-const Feature = ({ title, text }) => (
-  <div className="gpt3__features-container__feature">
-    <div className="gpt3__features-container__feature-title">
+const Feature = ({ title, text, direction }) => (
+  <Container direction={direction}>
+    <Title>
       <div />
       <h1>{title}</h1>
-    </div>
-    <div className="gpt3__features-container_feature-text">
+    </Title>
+    <Text direction={direction}>
       <p>{text}</p>
-    </div>
-  </div>
+    </Text>
+  </Container>
 );
 
 export default Feature;

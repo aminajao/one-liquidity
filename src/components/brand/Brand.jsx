@@ -1,9 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import { google, slack, atlassian, dropbox, shopify } from './imports';
-import './brand.css';
 
 const Brand = () => (
-  <div className="gpt3__brand section__padding">
+  <BrandContainer className=" section__padding">
     <div>
       <img src={google} />
     </div>
@@ -19,7 +19,25 @@ const Brand = () => (
     <div>
       <img src={shopify} />
     </div>
-  </div>
+  </BrandContainer>
 );
 
 export default Brand;
+
+const BrandContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    flex: 1;
+    max-width: 150px;
+    min-width: 120px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;

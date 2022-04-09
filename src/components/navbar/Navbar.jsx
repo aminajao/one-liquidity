@@ -1,40 +1,44 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import './navbar.css';
+import {
+  Navbar as NavBar,
+  NavbarLinks,
+  NavbarLinksContainer,
+  NavbarLogo,
+  NavbarMenu,
+  SignIn,
+} from './styled.jsx';
 import Button from '../button/Button';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <h1 className="logo">One Liquidity</h1>
-        </div>
-        <div className="gpt3__navbar-links_container">
+    <NavBar>
+      <NavbarLinks>
+        <NavbarLogo>
+          <h1>One Liquidity</h1>
+        </NavbarLogo>
+        <NavbarLinksContainer>
           <p>
-            <a href="#home">Documentation</a>
+            <a href="/">Documentation</a>
           </p>
           <p>
-            <a href="#wgpt3">Developers</a>
+            <a href="/">Developers</a>
           </p>
           <p>
-            <a href="#possibility">Pricing</a>
+            <a href="/">Pricing</a>
           </p>
           <p>
-            <a href="#features">Case Studies</a>
+            <a href="/">Case Studies </a>
           </p>
-          {/* <p>
-            <a href="#blog">Library</a>
-          </p> */}
-        </div>
-      </div>
-      <div className="gpt3__navbar-sign">
+        </NavbarLinksContainer>
+      </NavbarLinks>
+      <SignIn>
         <p>Sign in</p>
         <Button>Sign up</Button>
-      </div>
-      <div className="gpt3__navbar-menu">
+      </SignIn>
+      <NavbarMenu>
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -48,8 +52,8 @@ const Navbar = () => {
             onClick={() => setToggleMenu(true)}
           />
         )}
-      </div>
-    </div>
+      </NavbarMenu>
+    </NavBar>
   );
 };
 
