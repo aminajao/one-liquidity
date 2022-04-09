@@ -1,6 +1,8 @@
+/* eslint-disable no-bitwise */
 import styled from 'styled-components';
+import { FeatureProps } from './Feature';
 
-export const Container = styled.div`
+export const Container = styled.div < FeatureProps > `
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,7 +41,7 @@ export const Title = styled.div`
   }
 `;
 
-export const Text = styled.div`
+export const Text = styled.div < FeatureProps > `
   flex: 2;
   max-width: 700px;
   display: flex;

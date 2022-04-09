@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ children }) => <StyledButton>{children}</StyledButton>;
+interface BtnType {
+  children: string;
+}
+
+const Button = ({ children }: BtnType) => (
+  <StyledButton>{children}</StyledButton>
+);
 
 export default Button;
 

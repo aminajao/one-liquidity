@@ -4,7 +4,7 @@ import {
   Heading,
   Container,
   LeftContainer,
-} from './styled.jsx';
+} from './styled';
 import CodeSnippet from '../../assets/codesnippet.png';
 import { Button } from '../../components';
 

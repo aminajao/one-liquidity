@@ -1,6 +1,6 @@
 import React from 'react';
 import Feature from '../../components/feature/Feature';
-import { Container, Heading, FeaturesContainer } from './styled.jsx';
+import { Container, Heading, FeaturesContainer } from './styled';
 import Illustration from '../../assets/illustration.svg';
 
 const featuresData = [

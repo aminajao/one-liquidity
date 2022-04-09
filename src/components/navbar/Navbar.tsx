@@ -7,7 +7,7 @@ import {
   NavbarLogo,
   NavbarMenu,
   SignIn,
-} from './styled.jsx';
+} from './styled';
 import Button from '../button/Button';
 
 const Navbar = () => {
